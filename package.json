@@ -2,7 +2,13 @@
   "name": "daytonrogers-javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment for Dayton Rogers Manufacturing Co.",
-  "scripts": {},
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel open:src",
+    "open:src": "node buildScripts/srcServer.js",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel start localtunnel"
+  },
   "author": "Quintin Holmberg",
   "license": "MIT",
   "dependencies": {
