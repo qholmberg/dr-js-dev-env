@@ -8,7 +8,7 @@ describe('Our first test', () => {
   });
 });
 
-describe('index.html', () => {
+/*describe('index.html', () => {
   it('should have h1 that says Users', () => {
     const index = fs.readFileSync('./src/index.html', "utf-8");
     const { JSDOM } = jsdom;
@@ -17,4 +17,4 @@ describe('index.html', () => {
     expect(h1.innerHTML).to.equal("Users");
     dom.window.close();
   })
-})
+})*/
